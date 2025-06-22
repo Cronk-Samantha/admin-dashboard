@@ -16,7 +16,8 @@
 
 #body {
     width: 100vw;
-    height: 100vh;
+    padding: 0;
+    margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-row: 1fr 1fr 1fr;
@@ -24,4 +25,20 @@
         "sidebar header header"
         "sidebar main main"
         "sidebar main main";
+}
+
+.sidebar-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sidebar-heading > svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+.sidebar-heading > h2 {
+    font-size: 2rem;
 }
